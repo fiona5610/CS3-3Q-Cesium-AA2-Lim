@@ -5,11 +5,11 @@ function calculatingPopulation(){
 let initialPop;
 let finalPop;
 let rate;
-let time;
+let time = 0;
 let eulersNum = 2.71828;
 let name;
 let region;
-let monsteInformation;
+let monsterInformation;
 
 
 // Prompting of values
@@ -23,9 +23,9 @@ finalPop = Math.round (initialPop * Math.pow(eulersNum, rate * time));
 //Prompting for region and name
 region = prompt ('Enter the region where the monster is found: ');
 name = prompt ('Enter the name of the monster: ');
-monsteInformation = region.concat (' ', name);
+monsterInformation = region.concat (' ', name);
 
 //Printing of results
-document.getElementById("result").innerHTML = "After " + time + " hour/s, the popultaion of " + monsteInformation.toUpperCase(monsteInformation) + " has increased to " + finalPop;
+document.getElementById("result").innerHTML = "After " + time + " hour/s, the popultaion of " + monsteInformation.toUpperCase(monsterInformation) + " has increased to " + finalPop;
 
 }
