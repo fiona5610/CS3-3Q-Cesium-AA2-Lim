@@ -18,7 +18,7 @@ rate =  parseFloat(prompt ('Enter the rate of growth between 0 to 1:'));
 time = parseFloat (prompt('Enter the time in hours'));
 
 // Calculating Final Population
-finaPop = Math.round (initialPop * Math.pow(eulersNum, rate * time));
+finalPop = Math.round (initialPop * Math.pow(eulersNum, rate * time));
 
 //Prompting for region and name
 region = prompt ('Enter the region where the monster is found: ');
